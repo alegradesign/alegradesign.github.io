@@ -1,8 +1,101 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Alegra Design</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 <body>
-<section style="width:500px;margin: 0 auto;">
-    <img style="width:500px;margin-top:200px" src="img/logo.svg">
-</section>
+<!--
+Based on Preline
+https://preline.co/examples/hero-sections.html#hero-gradient-bg
+-->
+
+<!-- Hero -->
+<div class="relative overflow-hidden">
+  <!-- Gradients -->
+  <div aria-hidden="true" class="flex absolute -top-96 start-1/2 transform -translate-x-1/2">
+    <div class="bg-gradient-to-r from-teal-300/20 to-lime-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-teal-900/50 dark:to-purple-900"></div>
+    <div class="bg-gradient-to-tl from-cyan-50 via-blue-50 to-cyan-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"></div>
+    <div class="bg-gradient-to-r from-teal-300/20 to-lime-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-teal-900/50 dark:to-purple-900"></div>
+  </div>
+  <!-- End Gradients -->
+
+  <div class="relative z-10 2xl:mt-20 xl:mt-20">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+      <div class="max-w-2xl text-center mx-auto">
+        <!-- Title -->
+        <div class="mt-0 max-w-2xl flex items-center justify-center">
+          <img class="mt-8 mb-8 w-[280px] sm:w-[340px] md:w-[480px]" src="img/logo.svg">
+        </div>
+        <!-- End Title -->
+      </div>
+
+    <!-- Card Blog -->
+
+      <!-- Grid -->
+      <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 mt-10 mb-10 lg:mb-14">
+
+        <!-- Card -->
+        <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800" href="https://sites.google.com/alegra.com/design" target="_blank">
+          <div class="">
+            <img class="w-full h-[280px] object-cover rounded-t-xl" src="img/bg2.jpg" alt="Image Description">
+          </div>
+          <div class="p-8 md:p-8">
+            <h2 class="mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+              Brand
+            </h2>
+            <h3 class="mt-2 mb-4 text-sm text-slate-600 dark:text-neutral-300 dark:group-hover:text-white">
+              Conoce los fundamentos de diseño de Alegra y sus productos de software.
+            </h3>
+          </div>
+        </a>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800" href="#">
+          <div class="">
+            <img class="w-full h-[280px] object-cover rounded-t-xl" src="img/bg1.jpg" alt="Image Description">
+          </div>
+          <div class="p-8 md:p-8">
+            <h2 class="mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+              Libraries
+            </h2>
+            <h3 class="mt-2 mb-4 text-sm text-slate-600 dark:text-neutral-300 dark:group-hover:text-white">
+              Utiliza las librerías y recursos disponibles de Smile Design System.
+            </h3>
+          </div>
+        </a>
+        <!-- End Card -->
+
+          <!-- Card -->
+          <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800" href="#">
+            <div class="">
+              <img class="w-full h-[280px] object-cover rounded-t-xl" src="img/bg3.jpg" alt="Image Description">
+            </div>
+            <div class="p-8 md:p-8">
+              <h2 class="mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+                Learning
+              </h2>
+              <h3 class="mt-2 mb-4 text-sm text-slate-600 dark:text-neutral-300 dark:group-hover:text-white">
+                Perfecciona tus conocimientos con guías de cursos, libros y material de aprendizaje.
+              </h3>
+            </div>
+          </a>
+          <!-- End Card -->
+
+      </div>
+      <!-- End Grid -->
+
+    <!-- End Card Blog -->
+
+    </div>
+  </div>
+</div>
+<!-- End Hero -->
+  
 </body>
+
 </html>
