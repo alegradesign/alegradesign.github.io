@@ -5,7 +5,22 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap');
+  </style>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+          'heading': ['Lexend', 'system-ui'],
+          'sans': ['Inter', 'system-ui']
+        }
+        }
+      }
+    }
+  </script>  
 </head>
 <body>
 <!--
@@ -44,10 +59,10 @@ https://preline.co/examples/hero-sections.html#hero-gradient-bg
             <img class="w-full h-[280px] object-cover rounded-t-xl" src="img/bg2.jpg" alt="Image Description">
           </div>
           <div class="p-8 md:p-8">
-            <h2 class="mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+            <h2 class="font-heading mt-2 text-lg text-slate-800 font-medium dark:text-neutral-400">
               Brand
             </h2>
-            <h3 class="mt-2 mb-4 text-sm text-slate-600 dark:text-neutral-300 dark:group-hover:text-white">
+            <h3 class="mt-2 mb-4 text-sm text-slate-500 dark:text-neutral-300 dark:group-hover:text-white">
               Conoce los fundamentos de diseño de Alegra y sus productos de software.
             </h3>
           </div>
@@ -60,11 +75,11 @@ https://preline.co/examples/hero-sections.html#hero-gradient-bg
             <img class="w-full h-[280px] object-cover rounded-t-xl" src="img/bg1.jpg" alt="Image Description">
           </div>
           <div class="p-8 md:p-8">
-            <h2 class="mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+            <h2 class="font-heading mt-2 text-lg text-slate-800 font-medium dark:text-neutral-400">
               Libraries
             </h2>
-            <h3 class="mt-2 mb-4 text-sm text-slate-600 dark:text-neutral-300 dark:group-hover:text-white">
-              Utiliza las librerías y recursos disponibles de Smile Design System.
+            <h3 class="mt-2 mb-4 text-sm text-slate-500 dark:text-neutral-300 dark:group-hover:text-white">
+              Utiliza las librerías y recursos disponibles de <span class="font-medium">Smile Design System</span>.
             </h3>
           </div>
         </a>
@@ -76,11 +91,11 @@ https://preline.co/examples/hero-sections.html#hero-gradient-bg
               <img class="w-full h-[280px] object-cover rounded-t-xl" src="img/bg3.jpg" alt="Image Description">
             </div>
             <div class="p-8 md:p-8">
-              <h2 class="mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+              <h2 class="font-heading mt-2 text-lg text-slate-800 font-medium dark:text-neutral-400">
                 Learning
               </h2>
-              <h3 class="mt-2 mb-4 text-sm text-slate-600 dark:text-neutral-300 dark:group-hover:text-white">
-                Perfecciona tus conocimientos con guías de cursos, libros y material de aprendizaje.
+              <h3 class="mt-2 mb-4 text-sm text-slate-500 dark:text-neutral-300 dark:group-hover:text-white">
+                Perfecciona tus conocimientos con cursos de diseño, libros y material de aprendizaje.
               </h3>
             </div>
           </a>
