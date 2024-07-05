@@ -12,6 +12,9 @@
   <meta property="og:description" content="Conoce los recursos de diseño de Alegra, guías de estilo, librerías y sus productos de software." />
   <style>
    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap');
+   .card-image, .card {
+	   will-change: transform; /* Improve CSS Animation performance */
+   }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -23,6 +26,9 @@
           'sans': ['Inter', 'system-ui']
         }
         }
+      }
+      experimental: {
+       optimizeUniversalDefaults: true
       }
     }
   </script> 
@@ -55,9 +61,9 @@
       <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 mt-10 mb-10 lg:mb-14">
 
         <!-- Card -->
-        <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800 lg:hover:scale-105 transition-all duration-500 ease-in-out" href="https://sites.google.com/alegra.com/design/brand/logo" target="_blank">
+        <a class="card group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800 lg:hover:scale-105 transition-all duration-500 ease-in-out" href="https://sites.google.com/alegra.com/design/brand/logo" target="_blank">
           <div class="overflow-hidden rounded-t-xl">
-            <img class="w-full h-[280px] object-cover rounded-t-xl group-hover:scale-125 ease-in duration-300" src="img/bg2.jpg" alt="Image Description">
+            <img class="card-image w-full h-[280px] object-cover rounded-t-xl group-hover:scale-125 ease-in duration-300" src="img/bg2.jpg" alt="Image Description">
           </div>
           <div class="p-8 md:p-8">
             <h2 class="font-heading mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
@@ -71,9 +77,9 @@
         <!-- End Card -->
 
         <!-- Card -->
-        <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800 lg:hover:scale-105 transition-all duration-500 ease-in-out" href="#">
+        <a class="card group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800 lg:hover:scale-105 transition-all duration-500 ease-in-out" href="#">
           <div class="overflow-hidden rounded-t-xl">
-            <img class="w-full h-[280px] object-cover rounded-t-xl group-hover:scale-125 ease-in duration-300" src="img/bg1.jpg" alt="Image Description">
+            <img class="card-image w-full h-[280px] object-cover rounded-t-xl group-hover:scale-125 ease-in duration-300" src="img/bg1.jpg" alt="Image Description">
           </div>
           <div class="p-8 md:p-8">
             <h2 class="font-heading mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
@@ -87,9 +93,9 @@
         <!-- End Card -->
 
           <!-- Card -->
-          <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800 lg:hover:scale-105 transition-all duration-500 ease-in-out" href="#">
+          <a class="card group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-lg transition dark:bg-neutral-900 dark:border-neutral-800 lg:hover:scale-105 transition-all duration-500 ease-in-out" href="#">
             <div class="overflow-hidden rounded-t-xl">
-              <img class="w-full h-[280px] object-cover rounded-t-xl group-hover:scale-125 ease-in duration-300" src="img/bg3.jpg" alt="Image Description">
+              <img class="card-image w-full h-[280px] object-cover rounded-t-xl group-hover:scale-125 ease-in duration-300" src="img/bg3.jpg" alt="Image Description">
             </div>
             <div class="p-8 md:p-8">
               <h2 class="font-heading mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
