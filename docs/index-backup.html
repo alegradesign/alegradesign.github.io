@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alegra Design</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta property="og:title" content="Alegra Design" />
+  <meta property="og:image" content="https://alegra.design/img/page-thumb.png" />
+  <meta property="og:image:secure_url" content="https://alegra.design/img/page-thumb.png" /> 
+  <meta property="og:description" content="Conoce los recursos de diseño de Alegra, guías de estilo, librerías y sus productos de software." />
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&display=swap');
+   .card-image, .card {
+	   will-change: transform; /* Improve CSS Animation performance */
+   }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+          'heading': ['Lexend', 'system-ui'],
+          'sans': ['Inter', 'system-ui']
+        }
+        }
+      }
+    }
+  </script> 
+</head>
+<body>
+<!-- Based on Preline https://preline.co/ -->
+<!-- Hero -->
+<div class="relative overflow-hidden">
+  <!-- Gradients -->
+  <div aria-hidden="true" class="flex absolute -top-96 start-1/2 transform -translate-x-1/2">
+    <div class="bg-gradient-to-tl from-cyan-50/20 via-blue-50/50 to-cyan-50/20 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-bottom"></div>
+  </div>
+  <!-- End Gradients -->
+
+  <div class="relative z-10 2xl:mt-20">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
+      <div class="max-w-2xl text-center mx-auto">
+        <!-- Title -->
+        <div class="mt-0 max-w-2xl flex items-center justify-center">
+          <img class="xl:mt-6 xl:mb-8 w-[220px] md:w-[340px] xl:w-[400px] 2xl:w-[480px]" src="img/logo.svg">
+        </div>
+        <!-- End Title -->
+      </div>
+
+    <!-- Card Blog -->
+
+      <!-- Grid -->
+      <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 mt-10 mb-10 lg:mb-14">
+
+        <!-- Card -->
+        <a class="card group flex flex-col bg-white border shadow-sm rounded-xl xl:hover:shadow-xl transition ease-in duration-300 xl:hover:shadow-slate-300/30 dark:bg-neutral-900 dark:border-neutral-800" href="https://sites.google.com/alegra.com/design/" target="_blank">
+          <div class="overflow-hidden rounded-t-xl">
+            <img class="card-image w-full h-[280px] object-cover rounded-t-xl xl:group-hover:scale-125 ease-in duration-300" src="img/bg2.jpg" alt="Image Description">
+          </div>
+          <div class="p-8 md:p-8">
+            <h2 class="font-heading mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+              Brand
+            </h2>
+            <h3 class="mt-2 mb-4 text-sm text-slate-500 dark:text-neutral-300 dark:group-hover:text-white">
+              Conoce los fundamentos de diseño de Alegra y sus productos de software.
+            </h3>
+          </div>
+        </a>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <a class="card group flex flex-col bg-white border shadow-sm rounded-xl xl:hover:shadow-xl transition ease-in duration-300 xl:hover:shadow-slate-300/30 dark:bg-neutral-900 dark:border-neutral-800" href="#" target="_blank">
+          <div class="overflow-hidden rounded-t-xl">
+            <img class="card-image w-full h-[280px] object-cover rounded-t-xl xl:group-hover:scale-125 ease-in duration-300" src="img/bg1.jpg" alt="Image Description">
+          </div>
+          <div class="p-8 md:p-8">
+            <h2 class="font-heading mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+              Libraries
+            </h2>
+            <h3 class="mt-2 mb-4 text-sm text-slate-500 dark:text-neutral-300 dark:group-hover:text-white">
+              Utiliza las librerías y recursos disponibles de <span class="font-medium">Smile Design System</span>.
+            </h3>
+          </div>
+        </a>
+        <!-- End Card -->
+
+          <!-- Card -->
+          <a class="card group flex flex-col bg-white border shadow-sm rounded-xl xl:hover:shadow-xl transition ease-in duration-300 xl:hover:shadow-slate-300/30 dark:bg-neutral-900 dark:border-neutral-800" href="#" target="_blank">
+            <div class="overflow-hidden rounded-t-xl">
+              <img class="card-image w-full h-[280px] object-cover rounded-t-xl xl:group-hover:scale-125 ease-in duration-300" src="img/bg3.jpg" alt="Image Description">
+            </div>
+            <div class="p-8 md:p-8">
+              <h2 class="font-heading mt-2 text-lg text-slate-700 font-medium dark:text-neutral-400">
+                Learning
+              </h2>
+              <h3 class="mt-2 mb-4 text-sm text-slate-500 dark:text-neutral-300 dark:group-hover:text-white">
+                Perfecciona tus conocimientos con cursos de diseño, libros y material de aprendizaje.
+              </h3>
+            </div>
+          </a>
+          <!-- End Card -->
+
+      </div>
+      <!-- End Grid -->
+
+    <!-- End Card Blog -->
+
+    </div>
+  </div>
+</div>
+<!-- End Hero -->
+  
+</body>
+
+</html>
