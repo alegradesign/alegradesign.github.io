@@ -11,6 +11,7 @@
 ehthumbs.db
 Thumbs.db
 *.scssc
+*.io.code-workspace
 
 # Ignore Node files
 
